@@ -30,32 +30,26 @@ public class ProcesoRectangulo {
         vista.mostrar("Area = " + modelo.area());
     }
 
-    public void escalar() {       
-        int tipo = vista.leerInt("Escala (1=uniforme, 2=no uniforme): ");
-        if (tipo == 1) {
-            double f = vista.leerDouble("factor: ");
-            modelo.escalar(f);
-        } else {
-            double fx = vista.leerDouble("fx: ");
-            double fy = vista.leerDouble("fy: ");
-            modelo.escalar(fx, fy);
-        }
-        vista.mostrar("Escalado:" + modelo);
+    public void escalar() {
+        
+        double f = vista.leerDouble("Valor de escala: ");
+        modelo.escalar(f);  
+        vista.mostrar("Escalado: " + modelo);
     }
 
-    public void mover() {     
+    public void mover() {
         int sense = vista.leerInt("Mover (1.horizontal, 2.vertical): ");
         if (sense == 1) {
-            double dx = vista.leerDouble("dx (neg izquierda / pos dererecha): ");
+            double dx = vista.leerDouble("En x: ");
             modelo.mover(dx, 0);
         } else {
-            double dy = vista.leerDouble("dy (neg abajo / pos arriba): ");
+            double dy = vista.leerDouble("En y: ");
             modelo.mover(0, dy);
         }
         vista.mostrar("Movido: " + modelo);
     }
 
-    public void probarPunto() {   
+    public void probarPunto() {
         double x = vista.leerDouble("Punto x: ");
         double y = vista.leerDouble("Punto y: ");
         boolean dentro = modelo.contiene(x, y);
@@ -63,5 +57,3 @@ public class ProcesoRectangulo {
     }
 
 }
-
-
