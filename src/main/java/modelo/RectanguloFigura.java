@@ -74,5 +74,9 @@ public class RectanguloFigura extends Figura{
         return getNombre() + " p1=(" + p1.getX() + "," + p1.getY() + ") p2=("
                 + p2.getX() + "," + p2.getY() + ") area=" + area();
     }
+
+    void escalar(double fx, double fy) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
