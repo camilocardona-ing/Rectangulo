@@ -26,7 +26,7 @@ public class Rectangulo {
         while (!salir) {
             vista.mostrar("\n1) Crear rectangulo");
             vista.mostrar("2) Calcular area");
-            vista.mostrar("3) Escalar (p1 fijo)");
+            vista.mostrar("3) Escalar ");
             vista.mostrar("4) Mover (solo un sentido)");
             vista.mostrar("5) Probar si un punto esta dentro");
             vista.mostrar("0) Salir");
