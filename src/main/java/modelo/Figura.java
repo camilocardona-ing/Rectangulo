@@ -24,8 +24,5 @@ public class Figura {
     }
     
     public double area() {
-        return 0.0;}
-
-
-    
+        return 0.0;}    
 }
