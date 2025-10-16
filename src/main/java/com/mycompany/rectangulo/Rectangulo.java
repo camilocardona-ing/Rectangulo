@@ -40,7 +40,7 @@ public class Rectangulo {
                     case 4 -> procesoRectangulo.mover();
                     case 5 -> procesoRectangulo.probarPunto();
                     case 0 -> salir = true;
-                    default -> vista.mostrar("Opción invalida.");
+                    default -> vista.mostrar("Opcion invalida.");
                 }
             } catch (Exception e) {
                 vista.mostrar("Error: " + e.getMessage());
